@@ -325,14 +325,20 @@ Result is 8
 
 ### Returning values
 
-The `return` keyword exits the function immediately.
-
-Once a function returns, no other code within the function will be executed:
+The `return` keyword exits the function immediately. Any code after the `return` statement will not be executed.
 
 ```js
-function giveMe5() {
-  return 5;
-  console.log("I returned 5"); // CODE WILL NEVER EXECUTE!!!
+function describeWeather(temperature) {
+  if (temperature > 25) {
+    return "It's hot";
+    // no further code will be executed
+  }
+  if (temperature < 5) {
+    return "It's cold";
+    // no further code will be executed
+  }
+  return "It's nice outside";
+  console.log("function finished"); // this will never be reached
 }
 ```
 
@@ -353,24 +359,6 @@ console.log(number); // ???
 
 `undefined`! This function does not have a return value!
 <!-- .element: class="fragment" -->
-
----
-
-### Returning values
-
-A function can have multiple `return` statements. The first `return` statement exits the function:
-
-```js
-function isCold(temperature) {
-  if (temperature < 15) {
-    return true;
-  } else {
-    return false;
-  }
-  // this will never be reached!!!
-}
-let isItCold = isCold(25);
-```
 
 ---
 
