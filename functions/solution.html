@@ -64,24 +64,24 @@
     Return the cost of the toppings for that pizza.
     */
     function toppingCost(mushrooms, pepperoni, olives, pineapple) {
-      let toppings = 0;
+      let numToppings = 0;
       if (mushrooms) {
-        toppings += 1;
+        numToppings += 1;
       }
       if (pepperoni) {
-        toppings += 1;
+        numToppings += 1;
       }
       if (olives) {
-        toppings += 1;
+        numToppings += 1;
       }
       if (pineapple) {
-        toppings += 1;
+        numToppings += 1;
       }
 
-      if (toppings === 4) {
+      if (numToppings === 4) {
         return 10;
       } else {
-        return toppings;
+        return numToppings;
       }
     }
 
