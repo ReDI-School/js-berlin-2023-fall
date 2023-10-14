@@ -204,6 +204,8 @@ console.log(friends.length); // 4
 console.log(friends[3]); // David
 ```
 
+<codapi-snippet id="array-append-1" sandbox="javascript" editor="off" selector="section:has(#array-append-1) > pre > code"></codapi-snippet>
+
 ---
 
 ### remove a value
