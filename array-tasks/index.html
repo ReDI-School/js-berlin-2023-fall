@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@antonz/codapi@0.4.3/dist/snippet.css" />
+    <title>Sandbox</title>
+
+    <style>
+    pre {
+        background: #f5f5f5;
+        overflow-x: auto;
+        white-space: pre;
+        line-height: 1.5;
+    }        
+    </style>
+</head>
+<body>
+    <h1>Array Tasks</h1>
+
+    <h3>Task 1</h3>
+    The output on console should be "my second best friend is Mary", but we get an error instead.<br/>
+    Fix this by adding a single character in the code below:
+    <pre class="code">
+let myFriends = ["John", "Mary", "Alex"];
+console.log("my second best friend is " + myFriends[]);
+</pre>
+    <codapi-snippet sandbox="javascript" editor="basic"></codapi-snippet>
+
+    <h3>Task 2</h3>
+    The student tries to add a new friend to the array, but the code doesn't work.<br/>
+    It should print the new friend's name, "David" on the console.<br/>
+    Can you fix the code so that "myFriends[3]" points to "David"? (Hint: You need to change only one single word below)
+    <pre class="code">
+let myFriends = ["John", "Mary", "Alex"];
+myFriends.pop("David");
+console.log(myFriends[3]);
+</pre>
+    <codapi-snippet sandbox="javascript" editor="basic"></codapi-snippet>
+
+    <h3>Task 3</h3>
+    The code should print the first friend of each group to console.<br/>
+    In this example, it should print "Mary" and "John".<br/>
+    Fix the code by changing the array indexes within the "console.log":
+
+    <pre class="code">
+let friendGroups = [["Mary", "Alex"], ["John", "David"]];
+console.log(friendGroups[0,0]);
+console.log(friendGroups[1,0]);
+</pre>
+    <codapi-snippet sandbox="javascript" editor="basic"></codapi-snippet>
+
+    <script src="https://unpkg.com/@antonz/codapi@0.4.3/dist/snippet.js"></script>
+</body>
+</html>
