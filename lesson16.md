@@ -40,7 +40,8 @@ https://date.nager.at/Api
 ### Task
 
 Show the holidays in Germany for 2024.
-This differs from state to state. Add a dropdown to select a specific state?
+
+BONUS: Add a dropdown to select holidays for one state only.
 
 ---
 
@@ -54,7 +55,7 @@ https://leafletjs.com/examples/quick-start/
 
 ### Task
 
-Render a map using the Leaflet plugin.
+Render a map using the Leaflet library.
 Can you add a pin showing your current position?
 
 ---
